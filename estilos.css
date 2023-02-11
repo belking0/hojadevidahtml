@@ -1,19 +1,72 @@
-body
+#container 
 {
-    background: rgb(216, 184, 223);
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-family: Arial;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
+    line-height: 60px;
 }
-#container
+
+.checkbtn
 {
-    background: beige;
-    width: 70%;
-    padding: 0;
-    text-align: left;
-    border: 1px solid rgb(94, 70, 70);
-    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    float: left;
+    line-height: 60px;
+    font-size: 25px;
+    cursor: pointer;
+}
+#logo
+{
+    float: right;
+}
+#container-menu
+{
+    position: absolute;
+    background: #4D626C;
+    width:auto;
+    height: 100vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ #container-menu
+{
+    opacity: 1;
+    visibility: visible;
+}
+#cont-menu
+{
+    width: 100%;
+    max-width: 250px;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+}
+#cont-menu nav
+{
+    transform: translateY(15%);
+
+}
+#cont-menu nav h1
+{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #ffffff;
+    border-left: 5px solid transparent;
+    transition: all 500ms ease;
+}
+#cont-menu nav h1:hover
+{
+    border-left: 5px solid #c7c7c7;
+    background: #8F141B;
+}
+#cont-menu label{
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+#btn-menu
+{
+    display: none;
 }
