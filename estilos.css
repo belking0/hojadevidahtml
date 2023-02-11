@@ -4,30 +4,41 @@
     box-sizing: border-box;
     font-family:sans-serif;
 }
+body{
+    background-color: #DBE0E2;
+}
+#hoja
+{
+    background-color: #5C0E12;
+}
 #container
 {
-    width: 90%;
-    max-width: 1200px;
+    background-color: #5C0E12;
+    width: 100%;
     margin: auto;
     float: left;
-    line-height: 70px;
+    line-height: 0px;
 }
 #btn-menu2
 {
-    margin-left: 10px;
+    margin-left: 20px;
     float: left;
     line-height: 70px;
 }
 #btn-menu2 label
 {
-    color: #c41111;
+    color: #C7B363;
     font-size: 25px;
     cursor: pointer;
 }
 #logo
 {
+    margin-top: 5px;
     float: right;
-    line-height: 70px;
+}
+#logo img
+{
+    width: 75%;
 }
 #btn-menu
 {
@@ -47,24 +58,25 @@
 #cont-menu
 {
     width: 100%;
-    max-width: 250px;
+    max-width: max-content;
     background: #4D626C;
     height: 100vh;
     position: relative;
 }
 #cont-menu nav
 {
-    transform: translateY(15%);
+    transform: translateY(10%);
 }
 #cont-menu nav h1
 {
     display: block;
     text-decoration: none;
     padding: 20px;
-    color: #ffffff;
+    color: #DFD4A6;
     border-left: 5px solid transparent;
     transition: all 500ms ease;
 }
+
 #cont-menu nav h1:hover
 {
     border-left: 5px solid #c7c7c7;
@@ -73,7 +85,7 @@
 #cont-menu label{
     position: absolute;
     right: 15px;
-    top: 10px;
+    top: 20px;
     color: #fff;
     cursor: pointer;
     font-size: 18px;
@@ -86,16 +98,18 @@
 #cont-menu nav img
 {
     width: 200px;
-    display: block;
     text-decoration: none;
     padding: 20px;
     color: #ffffff;
-
     transition: all 500ms ease;
 }
-
 #cont-menu nav img:hover
 {
     border-left: 5px solid #c7c7c7;
     background: #8F141B;
+}
+#orien
+{
+    display: flex;
+    justify-content: center;
 }
