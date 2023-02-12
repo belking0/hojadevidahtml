@@ -154,7 +154,6 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
 }
 #container2 .columnas {
   text-align: justify;
-  font-size: 400%;
   padding: 10px;
   column-count: 1;
 }
@@ -179,6 +178,7 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
   transform-origin: bottom left;
 }
 .parrafo{
+  font-size: 200%;
   padding: 10px;
 }
 .vinetta{
@@ -207,7 +207,6 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
     text-align: left;
   }
   #container2 .columnas {
-    font-size: 100%;
     flex-direction: row;
     column-count: 2;
     justify-content: space-around;
@@ -227,5 +226,8 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
   }
   .vinetta{
     padding: 12px;
+  }
+  .parrafo{
+    font-size: 100%;
   }
 }
