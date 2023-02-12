@@ -4,39 +4,55 @@
     box-sizing: border-box;
     font-family:sans-serif;
 }
-body{
-    background-color: #4D626C;
-}
-#hoja
+
+.container
 {
-    background-color: #5C0E12;
-}
-#container
-{
-    background-color: #5C0E12;
-    width: 100%;
+  
     margin: auto;
-    float: left;
-    line-height: 0px;
+    max-width: 1400px;
+ 
 }
+
+header .container
+{
+    background-color: #8d0e0e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+header .logo
+{
+    padding: 5px 50px;
+}
+#container2
+{
+    margin: auto;
+    background-color:wheat;
+    width: 80%;
+    height: auto;
+}
+
 #btn-menu2
 {
-    margin-left: 20px;
+    justify-content: center;
+    padding: 5px 250px;
     float: left;
-    line-height: 70px;
 }
 #btn-menu2 label
 {
-    color: #C7B363;
+
+    color: #be1cb6;
     font-size: 25px;
     cursor: pointer;
 }
-#logo
+#btn-menu2:hover label
 {
-    margin-top: 5px;
-    float: right;
+    background-color: #9e163f;
 }
-#logo img
+
+header .logo img
 {
     width: 75%;
 }
@@ -44,7 +60,7 @@ body{
 {
     display: none;
 }
-#container-menu
+#container-menu .container
 {
     position: absolute;
     width:100%;
@@ -55,19 +71,15 @@ body{
     opacity: 0;
     visibility: hidden;
 }
-#cont-menu
+#cont-menu .container
 {
-    width: 100%;
     max-width: max-content;
     background: #4D626C;
-    height: 100vh;
+    height: max-content;
     position: relative;
+    text-align: center;
 }
-#cont-menu nav
-{
-    transform: translateY(10%);
-}
-#cont-menu nav h1
+#cont-menu .container nav h1
 {
     display: block;
     text-decoration: none;
@@ -77,12 +89,13 @@ body{
     transition: all 500ms ease;
 }
 
-#cont-menu nav h1:hover
+#cont-menu .container nav h1:hover
 {
     border-left: 5px solid #c7c7c7;
     background: #8F141B;
 }
-#cont-menu label{
+#cont-menu .container label
+{
     position: absolute;
     right: 15px;
     top: 20px;
@@ -90,20 +103,24 @@ body{
     cursor: pointer;
     font-size: 18px;
 }
-#btn-menu:checked ~ #container-menu
+#cerrar:hover label
+{
+    background-color: #b9494f;
+}
+
+#btn-menu:checked ~ #container-menu .container
 {
     opacity: 1;
     visibility: visible;
 }
-#cont-menu nav img
+#cont-menu .container nav img
 {
     width: 200px;
     text-decoration: none;
     padding: 20px;
     color: #ffffff;
-    transition: all 500ms ease;
 }
-#cont-menu nav img:hover
+#cont-menu .container nav img:hover
 {
     border-left: 5px solid #c7c7c7;
     background: #8F141B;
@@ -112,4 +129,23 @@ body{
 {
     display: flex;
     justify-content: center;
+}
+
+#hoja h1
+{
+    text-align: justify;
+}
+
+@media (min-width: 720px)
+{
+    header .container
+    {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #cont-menu .container
+    {
+        float: left;
+        text-align: left;
+    }
 }
