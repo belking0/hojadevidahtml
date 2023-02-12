@@ -1,151 +1,158 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+body {
+  background-color: #313233;
+}
+.container {
+  margin: auto;
 }
 
-.container
-{
-  
-    margin: auto;
-    max-width: 1400px;
- 
+header .container {
+  background-color: #8d0e0e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+header .logo {
+  padding: 5px 50px;
+}
+#container2 {
+  margin: auto;
+  background-color:#ffffff;
+  width: 70%;
+  height: 100vh;
 }
 
-header .container
-{
-    background-color: #8d0e0e;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+#btn-menu2 {
+  justify-content: center;
+  padding: 5px 250px;
+  float: left;
 }
-header .logo
-{
-    padding: 5px 50px;
+#btn-menu2 label {
+  color: #bebb1c;
+  font-size: 25px;
+  cursor: pointer;
 }
-#container2
-{
-    margin: auto;
-    background-color:wheat;
-    width: 80%;
-    height: auto;
+#btn-menu2:hover label {
+  background-color: #9e163f;
 }
 
-#btn-menu2
-{
-    justify-content: center;
-    padding: 5px 250px;
-    float: left;
+header .logo img {
+  width: 75%;
 }
-#btn-menu2 label
-{
-
-    color: #bebb1c;
-    font-size: 25px;
-    cursor: pointer;
+#btn-menu {
+  display: none;
 }
-#btn-menu2:hover label
-{
-    background-color: #9e163f;
+#container-menu .container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
 }
-
-header .logo img
-{
-    width: 75%;
+#cont-menu .container {
+  max-width: max-content;
+  background: #e6e6de;
+  height: max-content;
+  position: relative;
+  text-align: center;
+  border-width: 8px;
+  border-color: #C7B363;
+  border-style: solid;
 }
-#btn-menu
-{
-    display: none;
+#cont-menu .container nav h1 {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  color: #000000;
+  border-left: 5px solid transparent;
+  transition: all 500ms ease;
 }
-#container-menu .container
-{
-    position: absolute;
-    width:100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    transition: all 500ms ease;
-    opacity: 0;
-    visibility: hidden;
-}
-#cont-menu .container
-{
-    max-width: max-content;
-    background: #4D626C;
-    height: max-content;
-    position: relative;
-    text-align: center;
-}
-#cont-menu .container nav h1
-{
+#cont-menu .container nav h3 {
     display: block;
     text-decoration: none;
-    padding: 20px;
-    color: #DFD4A6;
+    padding: 15px;
+    color: #706666;
     border-left: 5px solid transparent;
     transition: all 500ms ease;
+  }
+.color-sec{
+    color: #1c68be;
 }
 
-#cont-menu .container nav h1:hover
-{
-    border-left: 5px solid #c7c7c7;
-    background: #8F141B;
+#cont-menu .container nav h1:hover {
+  border-left: 5px solid #ff0000;
+  background: #DDB8BA;
 }
-#cont-menu .container label
-{
-    position: absolute;
-    right: 15px;
-    top: 20px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 18px;
+#cont-menu .container nav h3:hover {
+    border-left: 5px solid #ff0000;
+    background: #DDB8BA;
+  }
+#cont-menu .container label {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  color: #000000;
+  cursor: pointer;
+  font-size: 18px;
 }
-#cerrar:hover label
-{
-    background-color: #b9494f;
-}
-
-#btn-menu:checked ~ #container-menu .container
-{
-    opacity: 1;
-    visibility: visible;
-}
-#cont-menu .container nav img
-{
-    width: 200px;
-    text-decoration: none;
-    padding: 20px;
-    color: #ffffff;
-}
-#cont-menu .container nav img:hover
-{
-    border-left: 5px solid #c7c7c7;
-    background: #8F141B;
-}
-#orien
-{
-    display: flex;
-    justify-content: center;
+#cerrar:hover label {
+  background-color: #b9494f;
 }
 
-#hoja h1
-{
-    text-align: justify;
+#btn-menu:checked ~ #container-menu .container {
+  opacity: 1;
+  visibility: visible;
+}
+#cont-menu .container nav img {
+  width: 200px;
+  text-decoration: none;
+  padding: 20px;
+  color: #ffffff;
+}
+#cont-menu .container nav img:hover {
+  border-left: 5px solid #ff0000;
+  background: #DDB8BA;
+}
+#orien {
+  display: flex;
+  justify-content: center;
 }
 
-@media (min-width:1000px)
-{
-    header .container
-    {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    #cont-menu .container
-    {
-        float: left;
-        text-align: left;
-    }
+#hoja h1 {
+  text-align: justify;
+}
+#correo{
+    color: black;
+    padding-right: 20px;
+}
+#telefono{
+    color: black;
+    padding-right: 20px;
+}
+#ubicacion{
+    color: black;
+    padding-right: 20px;
+}
+
+
+@media (min-width: 1000px) {
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #cont-menu .container {
+    float: left;
+    text-align: left;
+  }
 }
