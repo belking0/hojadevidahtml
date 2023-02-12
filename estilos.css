@@ -67,7 +67,8 @@ header .logo img {
   visibility: hidden;
 }
 #cont-menu .container {
-  max-width: max-content;
+  font-size: 20px;
+  width: max-content;
   height: max-content;
   position: relative;
   text-align: center;
@@ -205,6 +206,7 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
   #cont-menu .container {
     float: left;
     text-align: left;
+    font-size: 100%;
   }
   #container2 .columnas {
     flex-direction: row;
