@@ -16,7 +16,7 @@ body {
   background-size: cover;
 }
 
-header .container {
+header .container2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +37,7 @@ header .container {
 header .logo {
   padding: 5px 50px;
 }
-#container2 {
+#container1 {
   margin: auto;
   background-color: #ffffff;
   width: 900px;
@@ -63,7 +63,7 @@ header .logo img {
 #btn-menu {
   display: none;
 }
-#container-menu .container {
+#container-menu {
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -133,7 +133,7 @@ header .logo img {
   background-color: #b9494f;
 }
 
-#btn-menu:checked ~ #container-menu .container {
+#btn-menu:checked ~ #container-menu {
   opacity: 1;
   visibility: visible;
 }
@@ -167,7 +167,7 @@ header .logo img {
   color: olive;
   padding-right: 20px;
 }
-#container2 .columnas {
+#container1 .columnas {
   padding: 10px;
   column-count: 1;
 }
@@ -207,7 +207,7 @@ header .logo img {
   width: 100%;
   height: 100%;
 }
-@media (min-width: 1000px) {
+@media only screen and (min-width:1000px) {
   header .container {
     flex-direction: row;
     justify-content: space-between;
@@ -216,7 +216,7 @@ header .logo img {
     float: left;
     text-align: left;
   }
-  #container2 .columnas {
+  #container1 .columnas {
     flex-direction: row;
     column-count: 2;
     justify-content: space-around;
