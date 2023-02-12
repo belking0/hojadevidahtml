@@ -136,7 +136,7 @@ header .logo img
     text-align: justify;
 }
 
-@media (min-width: 720px)
+@media (min-width:1000px)
 {
     header .container
     {
