@@ -113,7 +113,7 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
   top: 20px;
   color: #000000;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 50px;
 }
 #cerrar:hover label {
   background-color: #b9494f;
